@@ -17,12 +17,10 @@ public class Ex3Loopingg {
             System.out.println("Would you like to repeat? (YES/NO): ");
             answer = scanner.nextLine();
 
-            // Ask for new numbers if the user wants to repeat
             if (answer.equalsIgnoreCase("YES")) {
                 System.out.println("Please enter two new numbers:");
                 a = scanner.nextInt();
                 b = scanner.nextInt();
-                scanner.nextLine(); // Consume the newline left by nextInt()
             }
 
         } while (answer.equalsIgnoreCase("YES"));
@@ -32,8 +30,6 @@ public class Ex3Loopingg {
         System.out.println("Please enter 2 digits and I will give you the sum:");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline left by nextInt()
         sumcalculator(a, b);
-        scanner.close();
     }
 }
