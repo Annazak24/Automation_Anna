@@ -5,6 +5,8 @@ If so, the loop should repeat; otherwise, the program should terminate. */
 
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class Ex3Loopingg {
 
     static Scanner scanner = new Scanner(System.in);
@@ -15,6 +17,7 @@ public class Ex3Loopingg {
             int sum = a + b;
             System.out.println("The sum is: " + sum);
             System.out.println("Would you like to repeat? (YES/NO): ");
+            scanner.nextLine();
             answer = scanner.nextLine();
 
             if (answer.equalsIgnoreCase("YES")) {
