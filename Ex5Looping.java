@@ -5,7 +5,7 @@ Example: 153 = (1 * 1 * 1) + (5 * 5 * 5) + (3 * 3 * 3)*/
 public class Ex5Looping {
 
     public static boolean isArmstrong(int number) {
-        int originalNumber = number;
+        int myNumber = number;
         int sum = 0;
 
         while (number > 0) {
@@ -13,16 +13,11 @@ public class Ex5Looping {
             sum += digit * digit * digit;
             number /= 10;
         }
-if (sum==originalNumber) {
-
-    System.out.println( sum + "is Armstrong number");
-}
-return true;
+        return sum == myNumber;
     }
 
     public static void main(String[] args) {
         System.out.println("Armstrong numbers between 1 and 500:");
-
 
         for (int i = 1; i <= 500; i++) {
             if (isArmstrong(i)) {
