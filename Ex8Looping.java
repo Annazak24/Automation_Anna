@@ -15,11 +15,8 @@ public class Ex8Looping {
     }
 
     public static void main(String[] args) {
-        int n = 10; // Number of terms to calculate in the series
-        double result = logarithm(n); // Call the logarithm method
-        System.out.println("Result of the logarithmic series for n = " + n + " is: " + result);
+        int n = 10;
+        double logarithm = logarithm(n);
+        System.out.println(logarithm);
     }
 }
-
-
-
