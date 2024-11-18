@@ -1,7 +1,8 @@
 package Book;
 
 public class Library {
-    private Book book1;
+    public Book book1;
+    private Book[] books = {book1};
 
     public Book[] getBooks() {
         return books;
@@ -14,24 +15,30 @@ public class Library {
     public Library(Book[] books) {
         this.books = books;
     }
-    Library library= new Library(book1);
 
-    private Book[] books = {book1};
-    public Book getBook(String name){
+    Library library = new Library(getBooks());
+
+
+    public Book getBook(String name) {
         Book result = null;
-        for(int i=0;i<=books.length-1;i++){
-            if(name==books[i].getName()){
-                result= books[i];
+        for (int i = 0; i <= books.length - 1; i++) {
+            if (name == books[i].getName()) {
+                result = books[i];
             }
         }
-       return result;
+        return result;
     }
-    public Book[] getNames(){
-        Book[] bookNames=null;
+
+    public String[] getNames() {
+        String[] bookNames = null; {
+        }
         for (Book book; books) {
-            for (int i = 0; i < ); i++) {
+            for (int i = 0; i <= library.books.length - 1; i++) {
+                bookNames[i] = new String[library.books[i].getName(];
 
             }
         }
+        return bookNames;
     }
+
 }
