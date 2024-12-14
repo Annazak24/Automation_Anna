@@ -1,8 +1,11 @@
 package Book;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Library {
-    public Book book1;
-    private Book[] books = {book1};
+   public Book book1;
+   private Book[] books = {book1};
 
     public Book[] getBooks() {
         return books;
@@ -22,7 +25,7 @@ public class Library {
     public Book getBook(String name) {
         Book result = null;
         for (int i = 0; i <= books.length - 1; i++) {
-            if (name == books[i].getName()) {
+            if (Book.equals(name, books[i].getName())) {
                 result = books[i];
             }
         }
